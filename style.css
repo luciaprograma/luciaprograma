@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap');
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 1700; 
+  font-size: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EBE6DC;
+
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background-image: url("img/atardecer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+/* MENU BAR*/
+.menu-bar {
+  display: flex;
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 10px;
+  justify-content: space-around;
+}
+
+/* menu option*/
+.menu-item {
+  position: relative;
+  margin-right: 20px;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: white;
+  padding: 12px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase; 
+  font-weight: bold;
+}
+
+
+.menu-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9); 
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+.submenu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+/*BOTONES FLOTANTES*/ 
+
+.floating-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 240px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-card {
+  width: 150px;
+  height: 150px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+.button-card img {
+  width: 100%;
+  height: auto;
+}
+
+.button-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100vw;     /* 100% del ancho de la pantalla */
+  min-height: 100vh;
+
+}
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 1300; 
+  font-size: 1.2rem;
+  max-width: 600px;;
+}
+.profile_image {
+  display: inline-block; 
+  
+
+}
+.profile_image img{
+  border-radius: 25px;
+  width: 400px; 
+  height: auto; 
+}
+.container{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+
+  gap: 35px;
+  width: 100vw;     
+  justify-content: center; 
+}
+
+.resume-img img {
+  width: 525px;
+  height: 525 * 0.3px;
+  display: block;
+  border-radius: 15px;
+  
+}
+
+.resume-img {
+  display: flex;
+  align-items: center;
+}
+/* footer */
+.site-footer {
+  background-color: #111;
+  color: white;
+  font-family: sans-serif;
+  padding: 1rem 2rem;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.footer-text p {
+  margin: 0.2rem 0;
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social-links a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Hover colors */
+.social-links a:hover .fa-youtube { color: #FF0000; }
+.social-links a:hover .fa-linkedin-in { color: #0077B5; }
+.social-links a:hover .fa-github { color: #c9d1d9; }
+.social-links a:hover .fa-instagram { color: #E1306C; }
