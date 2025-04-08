@@ -4,6 +4,22 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+@font-face {
+  font-family: 'FISH&CHIPS';
+  src: url('./fonts/FISHCHIPS-Regular.woff') format('woff'),
+       url('./fonts/FISHCHIPS-Regular.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MFCandy';
+  src: url('./fonts/MfCandy.woff2') format('woff2'),
+       url('./fonts/MfCandy.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 main {
   flex: 1;
@@ -12,9 +28,10 @@ main {
 }
 
 h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
+  
   font-weight: 1700; 
   font-size: 3rem;
+  font-family: "MFCandy", cursive;
 }
 
 * {
@@ -142,9 +159,10 @@ body {
 
 }
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'FISH&CHIPS', sans-serif;
+  -webkit-text-stroke: 0.4px black;
   font-weight: 1300; 
-  font-size: 1.2rem;
+  font-size: 2rem;
   max-width: 600px;;
 }
 .profile_image {
