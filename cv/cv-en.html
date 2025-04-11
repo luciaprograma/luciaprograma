@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucia Guzman - CV</title>
+
+    <!-- Elegant fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  
+/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="CV_styles.css" />
+  </head>
+  <body>
+    <!-- Download button -->
+    <div class="download-container">
+      <button onclick="downloadCV()">Download PDF</button>
+    </div>
+
+    <div class="sidebar">
+      <img src="profile_picture_back.jpg" alt="Lucia Guzman" />
+      <h1>Lucia Guzman</h1>
+      <p>Developer | Educator | Content Creator</p>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/luciaelisabetguzman" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/LuciGuzman" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:luciaeguzman@gmail.com" aria-label="Gmail">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://www.youtube.com/@TUCANAL" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/tuusuario" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="contact-info">
+        <p>Mar del Plata, Buenos Aires</p>
+        <p>+54 223 4557946</p>
+        <p>luciaeguzman@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="section">
+        <h2>About Me</h2>
+        <p>
+          I'm a proactive and creative developer with strong communication skills and a passion for continuous learning.
+    I have experience in building technical content and programming applications using modern technologies such as
+    JavaScript, React Native, and MySQL. I'm committed to writing clean, maintainable code and collaborating in agile, cross-functional teams. 
+    Always eager to take on new challenges that help me grow and make a positive impact on projects.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Experience</h2>
+        <p>
+          <strong>Content Creator</strong> (2022 - Present)<br />Production of
+          programming classes in Spanish, English, and Portuguese. Editing and
+          publishing technical content for social media platforms.
+        </p>
+        <p>
+          <strong>Escuela Nueva Pompeya</strong> (2014 - Present)<br />Primary
+          School Teacher
+        </p>
+        <p>
+          <strong>Cheeky Indumentaria</strong> (2011 - 2012)<br />Customer
+          Service
+        </p>
+        <p>
+          <strong>McDonald's</strong> (2008 - 2010)<br />Customer Service and
+          Complaint Management
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Education</h2>
+        <p>
+          <strong>Instituto Superior de Estudios Técnicos</strong
+          ><br />Application Programmer - Systems Analyst (2019 - 2021)
+        </p>
+        <p>
+          <strong>Instituto Pablo VI</strong><br />Primary School Teaching
+          Degree (2008 - 2011)
+        </p>
+      </div>
+      <div class="section">
+        <h2>Courses</h2>
+        <p>
+          <strong
+            >The Complete JavaScript Course 2025: From Zero to Expert!</strong
+          ><br />
+          Instructor: Jonas Schmedtmann - Udemy<br />
+          Completed: January 2023
+        </p>
+        <p>
+          <strong>The Complete React Native + Hooks Course</strong><br />
+          Instructor: Stephen Grider - Udemy<br />
+          Completed: March 2025
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <span>Creativity</span>
+          <span>Attention to detail</span>
+          <span>Proactivity</span>
+          <span>Social Media</span>
+          <span>Excel</span>
+          <span>Multilingual communication</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Technologies</h2>
+        <div class="tech-list">
+          <span>JavaScript</span>
+          <span>React Native</span>
+          <span>Expo</span>
+          <span>Java</span>
+          <span>MySQL</span>
+          <span>HTML & CSS</span>
+          <span>C</span>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Languages</h2>
+        <p>Spanish (native), English (B2), Portuguese (intermediate)</p>
+      </div>
+    </div>
+
+    <!-- Script for download -->
+    <script>
+      function downloadCV() {
+        const link = document.createElement("a");
+        link.href = "Guzman-Lucia-CV.pdf";
+        link.download = "Guzman-Lucia-CV.pdf";
+        link.click();
+      }
+    </script>
+  </body>
+</html>

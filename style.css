@@ -115,7 +115,47 @@ body {
 .menu-item:hover .submenu {
   display: block;
 }
+/*sub-submenu*/
+.submenu-item {
+  position: relative;
+}
 
+.submenu-btn {
+  color: white;
+  padding: 10px;
+  display: block;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: default;
+}
+
+.submenu-languages {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 5px;
+  min-width: 160px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.submenu-languages a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.submenu-languages a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.submenu-item:hover .submenu-languages {
+  display: block;
+}
 /*BOTONES FLOTANTES*/ 
 
 .floating-buttons {
