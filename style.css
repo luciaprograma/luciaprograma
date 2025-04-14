@@ -28,24 +28,24 @@ body {
 /* HEADER */
 header {
   width: 100%;
-  background-color: black; /* Fondo negro */
-  overflow: visible; /* Permite que el contenido desbordado se vea */
+  background-color: black;
+  overflow: visible;
   position: relative;
   display: flex;
-  justify-content: center; /* Centra el contenido en el header */
-  align-items: center; /* Alinea verticalmente los elementos */
-  height: 60px; /* Ajusta la altura del header para que coincida con la del menu-bar */
+  justify-content: center;
+  align-items: center; 
+  height: 60px; 
 }
 
 /* MENU BAR */
 .menu-bar {
   display: flex;
   background: rgba(0, 0, 0, 0.8); 
-  padding: 0; /* Elimina el padding, ya no es necesario */
+  padding: 0; 
   justify-content: space-around;
-  align-items: center; /* Para asegurar que los elementos estén alineados verticalmente */
+  align-items: center;
   width: 100%;
-  height: 100%; /* Asegura que el menu-bar tenga el mismo tamaño que el header */
+  height: 100%; 
 }
 
 /* Menu option */
@@ -78,7 +78,7 @@ header {
   border-radius: 5px;
   min-width: 160px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-  font-family: 'Source Sans Pro', sans-serif;
+ 
 }
 
 .submenu a {
@@ -87,7 +87,8 @@ header {
   text-decoration: none;
   color: white;
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .submenu a:hover {
@@ -98,46 +99,7 @@ header {
   display: block;
 }
 
-/* Sub-submenu */
-.submenu-item {
-  position: relative;
-}
 
-.submenu-btn {
-  color: white;
-  padding: 10px;
-  display: block;
-  font-size: 14px;
-  text-transform: uppercase;
-  cursor: default;
-}
-
-.submenu-languages {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  border-radius: 5px;
-  min-width: 160px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-.submenu-languages a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-}
-
-.submenu-languages a:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.submenu-item:hover .submenu-languages {
-  display: block;
-}
 
 /* Icon and text */
 .icon-text {
@@ -146,10 +108,37 @@ header {
   gap: 8px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+/* LANGUAGES FLAGS*/
+.lang-switcher {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.flag-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.flag-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid white;
+}
 
 /* Hero Section */
 .hero {
-  height: 75vh;   
+  padding: 20px 10px ;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -180,7 +169,7 @@ header {
 .hero-content .btn-main {
   background-color: #1E90FF;
   color: white;
-  padding: 10px 30px;
+  padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
@@ -336,6 +325,9 @@ header {
 }
 
 /* CONTACT SECTION*/
+
+/* CONTACT SECTION */
+
 .contact {
   padding: 30px 10px;
   background-color: #2B2B2B;
@@ -353,27 +345,37 @@ header {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 10px;
+  margin: 0 auto 10px auto;
 }
 
-.social-links {
+/* Social icons in contact section */
+.contact .social-icons { /* Update this to .social-links if HTML is changed */
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-top: 20px;
 }
 
-.social-links a {
-  font-size: 1.5rem;
+.contact .social-icons a { /* Update this to .social-links a */
+  font-size: 2rem;
   color: #EBE6DC;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.social-links a:hover {
-  color: #1E90FF;
+/* Hover color effects */
+.contact .social-icons a:hover .fa-youtube { color: #FF0000; }
+.contact .social-icons a:hover .fa-linkedin-in { color: #0077B5; }
+.contact .social-icons a:hover .fa-github { color: #c9d1d9; }
+.contact .social-icons a:hover .fa-instagram { color: #E1306C; }
+.contact .social-icons a:hover .fa-whatsapp { color: #25D366; } 
+.contact .social-icons a:hover .fa-google { color: #DB4437; } 
+.contact .social-icons a:hover {
+  transform: scale(1.2);
 }
-/* footer */
+
+
+/* FOOTER */
 .site-footer {
   background-color: #111;
   color: white;
@@ -384,32 +386,12 @@ header {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap; 
-  margin-left: 70px;
-  margin-right: 70px;
+  flex-direction: column;
 }
 
 .footer-text p {
   margin: 0.2rem 0;
   text-align: center;
 }
-
-.social-links {
-  display: flex;
-  gap: 20px;
-}
-
-.social-links a {
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-/* Hover colors */
-.social-links a:hover .fa-youtube { color: #FF0000; }
-.social-links a:hover .fa-linkedin-in { color: #0077B5; }
-.social-links a:hover .fa-github { color: #c9d1d9; }
-.social-links a:hover .fa-instagram { color: #E1306C; }
