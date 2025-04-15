@@ -4,7 +4,9 @@ html, body {
   display: flex;
   flex-direction: column;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 main {
   flex: 1;
@@ -391,7 +393,27 @@ header {
   flex-direction: column;
 }
 
-.footer-text p {
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.footer-column {
+  min-width: 180px;
+}
+
+.footer-column p {
   margin: 0.2rem 0;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-column i {
+  color: white; /* Íconos sin color */
+  font-size: 1rem;
 }
