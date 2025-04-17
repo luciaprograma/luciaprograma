@@ -53,7 +53,7 @@ header {
 /* Menu option */
 .menu-item {
   position: relative;
-  margin: 0 20px; /* Ajustamos el margen para dar un buen espaciado */
+  margin: 0 20px; 
 }
 
 .menu-btn {
@@ -145,7 +145,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #2B2B2B; /* Gris oscuro */
+  background-color: #2B2B2B; /
 }
 
 .hero-content h1 {
@@ -161,10 +161,10 @@ header {
   font-weight: 300;
   color: white;
   margin-bottom: 30px;
-  max-width: 800px; /* o el ancho que prefieras */
+  max-width: 800px; 
   margin-left: auto;
   margin-right: auto;
-  text-align: center; /* opcional, si querés que el texto quede centrado */
+  text-align: center; 
 }
 
 
@@ -187,7 +187,7 @@ header {
 .about-me {
   padding: 30px 10px;
   text-align: center;
-  background-color: #333333; /* Gris más claro */
+  background-color: #333333; 
 }
 
 .about-me h2 {
@@ -244,7 +244,7 @@ header {
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
-  gap: 10px; /* Espacio entre el icono y el texto */
+  gap: 10px; 
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
@@ -264,10 +264,10 @@ header {
 
 /* PROJECTS SECTIONS  */
 #web-proyects{
-  background-color: #2B2B2B;  /* Gris oscuro */
+  background-color: #2B2B2B; 
 }
 #mobile-projects {
-  background-color: #333333; /* Gris más claro */
+  background-color: #333333; 
 }
 
 .projects {
@@ -328,7 +328,6 @@ header {
 
 /* CONTACT SECTION*/
 
-/* CONTACT SECTION */
 
 .contact {
   padding: 30px 10px;
@@ -351,14 +350,14 @@ header {
 }
 
 /* Social icons in contact section */
-.contact .social-icons { /* Update this to .social-links if HTML is changed */
+.contact .social-icons {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin-top: 20px;
 }
 
-.contact .social-icons a { /* Update this to .social-links a */
+.contact .social-icons a { 
   font-size: 2rem;
   color: #EBE6DC;
   text-decoration: none;
@@ -414,6 +413,69 @@ header {
 }
 
 .footer-column i {
-  color: white; /* Íconos sin color */
+  color: white; 
   font-size: 1rem;
+}
+/* MEDIA QUERIES: RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .about-me h2,
+  .projects h2,
+  .contact h2 {
+    font-size: 2rem;
+  }
+
+  .about-me p,
+  .contact p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .project-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 90%;
+  }
+
+  .menu-bar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+  }
+
+  .lang-switcher {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-social-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact .social-icons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
