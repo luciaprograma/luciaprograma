@@ -4,13 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucia Guzman Desenvolvedora</title>
-    <!-- Elegant fonts: Source Sans Pro + Playfair Display -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -19,7 +17,6 @@
   <body>
     <main>
       <header class="header">
-        <!-- menu bar-->
         <nav class="menu-bar">
           <div class="menu-item">
             <button class="menu-btn">SOBRE MIM</button>
@@ -34,7 +31,6 @@
               <img src="img/ES.png" alt="Español" class="flag-img" />
               <span>SPA</span>
             </a>
-        
             <a href="index.html" class="flag-link">
               <img src="img/EN.png" alt="English" class="flag-img" />
               <span>EN</span>
@@ -42,7 +38,10 @@
           </div>
 
           <div class="menu-item">
-            <button class="menu-btn" onclick="window.open('https://github.com/luciaprograma')">
+            <button
+              class="menu-btn"
+              onclick="window.open('https://github.com/luciaprograma')"
+            >
               REPOSITÓRIO GIT
             </button>
           </div>
@@ -51,20 +50,28 @@
             <button class="menu-btn">CONTATO</button>
             <div class="submenu">
               <a href="https://wa.me/5492234557946">
-                <span class="icon-text"><i class="fab fa-whatsapp"></i>WhatsApp</span>
+                <span class="icon-text"
+                  ><i class="fab fa-whatsapp"></i>WhatsApp</span
+                >
               </a>
-              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com">
-                <span class="icon-text"><i class="far fa-envelope"></i>Gmail</span>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
+              >
+                <span class="icon-text"
+                  ><i class="far fa-envelope"></i>Gmail</span
+                >
               </a>
               <a href="https://www.linkedin.com/in/luciaguzmandev">
-                <span class="icon-text"><i class="fab fa-linkedin"></i>LinkedIn</span>
+                <span class="icon-text"
+                  ><i class="fab fa-linkedin"></i>LinkedIn</span
+                >
               </a>
             </div>
           </div>
         </nav>
       </header>
 
-      <!--HERO Section-->
+      <!-- HERO Section -->
       <section class="hero">
         <div class="hero-content">
           <h1>Lucia Guzman</h1>
@@ -73,26 +80,28 @@
             <img src="img/profile_picture.png" alt="foto de perfil" />
           </a>
           <p>
-            Desenvolvedora proativa e apaixonada por transformar ideias complexas
-            em soluções digitais intuitivas e centradas no usuário.
+            Desenvolvedora proativa e apaixonada por transformar ideias
+            complexas em soluções digitais intuitivas e centradas no usuário.
           </p>
           <a href="#web-proyects" class="btn-main">Ver Meus Projetos</a>
         </div>
       </section>
 
-      <!--ABOUT ME-->
+      <!-- SOBRE MIM -->
       <section id="CTM" class="about-me">
         <h2>Sobre Mim</h2>
         <p>
-          Desenvolvedora de aplicações mobile e web com foco em React Native, JavaScript e CSS.
-          Entrego soluções digitais de alta performance com ênfase na experiência do usuário.
+          Desenvolvedora de aplicações mobile e web com foco em React Native,
+          JavaScript e CSS. Entrego soluções digitais de alta performance com
+          ênfase na experiência do usuário.
         </p>
         <p>
-          Apaixonada por aprendizado contínuo, sou fluente em espanhol, inglês e português,
-          colaborando com equipes internacionais de forma eficaz.
+          Apaixonada por aprendizado contínuo, sou fluente em espanhol, inglês e
+          português, colaborando com equipes internacionais de forma eficaz.
         </p>
         <p>
-          Confira meus tutoriais e conteúdos sobre desenvolvimento de software no YouTube e Instagram.
+          Confira meus tutoriais e conteúdos sobre desenvolvimento de software
+          no YouTube.
         </p>
         <div class="about-social-container">
           <a
@@ -102,43 +111,66 @@
           >
             <i class="fab fa-youtube"></i> YouTube
           </a>
-          <a
-            href="https://www.instagram.com/luciaprograma/"
-            class="btn-social-main"
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
         </div>
       </section>
 
-      <!--WEB PROJECTS-->
+      <!-- BACKEND PROJECTS -->
+      <section id="backend-projects" class="projects">
+        <h2>Aplicações Backend</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <img src="img/backend_logo.png" alt="Geo Edu" />
+            <p class="proyects-paragraph">
+              Atualmente trabalho com desenvolvimento e manutenção de APIs e
+              lógica backend usando PHP (Laravel) e MySQL. Priorizo um código
+              limpo, escalável e eficiente no tratamento de dados. Utilizo o
+              Postman para testes e validações frequentes, garantindo
+              confiabilidade e integração adequada entre os sistemas.
+            </p>
+            <a href="https://lucias-pig-game.netlify.app/" class="btn-common"
+              >Ver Projeto</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- WEB PROJECTS -->
       <section id="web-proyects" class="projects">
         <h2>Aplicações Web</h2>
         <div class="project-cards">
           <div class="project-card">
             <img src="img/proactive_logo.png" alt="Pig Game" />
             <p>
-              Pig Game: Jogo baseado em JavaScript com HTML e CSS para layout e estilo,
-              com foco em lógica, funções e interatividade.
+              Pig Game: Jogo baseado em JavaScript com HTML e CSS para layout e
+              estilo, com foco em lógica, funções e interatividade.
             </p>
-            <a href="https://lucias-pig-game.netlify.app/" class="btn-project">Ver Online</a>
+            <a href="https://lucias-pig-game.netlify.app/" class="btn-project"
+              >Ver Online</a
+            >
           </div>
           <div class="project-card">
             <img src="img/detail_logo.png" alt="Guess the Number" />
             <p>
-              Guess the Number: Jogo desenvolvido em JavaScript, utilizando HTML e CSS para estrutura e design.
-              Destaque para geração aleatória, entrada do usuário e resposta dinâmica.
+              Guess the Number: Jogo desenvolvido em JavaScript, utilizando HTML
+              e CSS para estrutura e design. Destaque para geração aleatória,
+              entrada do usuário e resposta dinâmica.
             </p>
-            <a href="https://guessthesecretnum.netlify.app/" class="btn-project">Ver Online</a>
+            <a href="https://guessthesecretnum.netlify.app/" class="btn-project"
+              >Ver Online</a
+            >
           </div>
           <div class="project-card">
             <img src="img/creativity_logo.png" alt="Guess the Letter" />
             <p>
-              Jogo interativo criado com JavaScript, HTML e CSS, desafiando o usuário a identificar letras cursivas.
-              Enfatiza manipulação de eventos e responsividade da interface.
+              Jogo interativo criado com JavaScript, HTML e CSS, desafiando o
+              usuário a identificar letras cursivas. Enfatiza manipulação de
+              eventos e responsividade da interface.
             </p>
-            <a href="http://guessthecursiveletter.netlify.app/" class="btn-project">Ver Online</a>
+            <a
+              href="http://guessthecursiveletter.netlify.app/"
+              class="btn-project"
+              >Ver Online</a
+            >
           </div>
         </div>
       </section>
@@ -151,7 +183,8 @@
             <img src="img/mobile_app1.png" alt="Aplicativo Mobile 1" />
             <p>
               Desenvolvido com React Native e Expo, este app demonstra
-              desenvolvimento mobile multiplataforma com JavaScript, com foco em UI/UX e navegação fluida.
+              desenvolvimento mobile multiplataforma com JavaScript, com foco em
+              UI/UX e navegação fluida.
             </p>
             <a href="https://your-mobile-app1-link.com" class="btn-project">
               Ver Projeto
@@ -160,8 +193,9 @@
           <div class="project-card">
             <img src="img/mobile_app2.png" alt="Aplicativo Mobile 2" />
             <p>
-              Aplicativo mobile criado com React Native, integrando APIs externas e design responsivo.
-              Destaque para lógica em JavaScript e fluxo de navegação.
+              Aplicativo mobile criado com React Native, integrando APIs
+              externas e design responsivo. Destaque para lógica em JavaScript e
+              fluxo de navegação.
             </p>
             <a href="https://your-mobile-app2-link.com" class="btn-project">
               Ver Projeto
@@ -170,31 +204,34 @@
         </div>
       </section>
 
+      <!-- CONTATO -->
       <section id="contact" class="contact">
         <h2>Contato</h2>
         <p>
-          Interessado(a) em colaborar ou saber mais sobre meus projetos?
-          Fique à vontade para entrar em contato!
+          Interessado(a) em colaborar ou saber mais sobre meus projetos? Fique à
+          vontade para entrar em contato!
         </p>
         <div class="social-icons">
           <a href="https://wa.me/542234557946" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
-            aria-label="Gmail">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
+            aria-label="Gmail"
+          >
             <i class="fab fa-google"></i>
           </a>
           <a href="https://www.youtube.com/@luciaprograma" aria-label="YouTube">
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="https://www.linkedin.com/in/luciaguzmandev/" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/luciaguzmandev/"
+            aria-label="LinkedIn"
+          >
             <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="https://github.com/luciaprograma" aria-label="GitHub">
             <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.instagram.com/luciaprograma/" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
           </a>
         </div>
       </section>
@@ -205,7 +242,10 @@
         <div class="footer-columns">
           <div class="footer-column">
             <p>© 2025 Todos os direitos reservados</p>
-            <p><i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires, Argentina</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires,
+              Argentina
+            </p>
           </div>
           <div class="footer-column">
             <p><i class="fas fa-envelope"></i> luciaeguzman@gmail.com</p>
@@ -216,7 +256,6 @@
             <p><i class="fab fa-github"></i> luciaprograma</p>
           </div>
           <div class="footer-column">
-            <p><i class="fab fa-instagram"></i> luciaprograma</p>
             <p><i class="fab fa-youtube"></i> luciaprograma</p>
           </div>
         </div>

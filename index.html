@@ -17,148 +17,155 @@
     />
   </head>
   <body>
-    <main>
-      <header class="header">
-        <!-- menu bar-->
-        <nav class="menu-bar">
-          <div class="menu-item">
-            <button class="menu-btn">ABOUT ME</button>
-            <div class="submenu">
-              <a href="cv/cv-en.html" target="_blank">Resume in English</a>
-              <a href="cv/cv-es.html " target="_blank" >CV en Español</a>
-            </div>
+    <header class="header">
+      <!-- menu bar-->
+      <nav class="menu-bar">
+        <div class="menu-item">
+          <button class="menu-btn">RESUME</button>
+          <div class="submenu">
+            <a href="cv/cv-en.html" target="_blank">Resume in English</a>
+            <a href="cv/cv-es.html " target="_blank">CV en Español</a>
           </div>
-        
-            
-          <div class="menu-item lang-switcher">
-            <a href="index-es.html" class="flag-link">
-              <img src="img/ES.png" alt="Español" class="flag-img" />
-              <span>SPA</span>
-            </a>
-            <a href="index-pt.html" class="flag-link">
-              <img src="img/PT.png" alt="Português" class="flag-img" />
-              <span>PT</span>
-            </a>
-            
-          </div>
-          <div class="menu-item">
-                  <button class="menu-btn" onclick="window.open('https://github.com/luciaprograma')">
-                GIT REPOSITORY
-              </button>
-           </div>
-          <div class="menu-item">
-            <button class="menu-btn">CONTACT ME</button>
-            <div class="submenu">
-              <a href="https://wa.me/5492234557946">
-                <span class="icon-text"
-                  ><i class="fab fa-whatsapp"></i>WhatsApp</span
-                >
-              </a>
-              <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
-              >
-                <span class="icon-text"
-                  ><i class="far fa-envelope"></i>Gmail</span
-                >
-              </a>
-              <a href="https://www.linkedin.com/in/luciaguzmandev">
-                <span class="icon-text"
-                  ><i class="fab fa-linkedin"></i>LinkedIn</span
-                >
-              </a>
-            </div>
-          </div>
-         
-          
-        </nav>
-      </header>
+        </div>
 
-      <!--HERO Section-->
+        <div class="menu-item lang-switcher">
+          <a href="index-es.html" class="flag-link">
+            <img src="img/ES.png" alt="Español" class="flag-img" />
+            <span>SPA</span>
+          </a>
+          <a href="index-pt.html" class="flag-link">
+            <img src="img/PT.png" alt="Português" class="flag-img" />
+            <span>PT</span>
+          </a>
+        </div>
+        <div class="menu-item">
+          <button
+            class="menu-btn"
+            onclick="window.open('https://github.com/luciaprograma')"
+          >
+            GIT REPOSITORY
+          </button>
+        </div>
+        <div class="menu-item">
+          <button class="menu-btn">CONTACT ME</button>
+          <div class="submenu">
+            <a href="https://wa.me/5492234557946">
+              <span class="icon-text"
+                ><i class="fab fa-whatsapp"></i>WhatsApp</span
+              >
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
+            >
+              <span class="icon-text"
+                ><i class="far fa-envelope"></i>Gmail</span
+              >
+            </a>
+            <a href="https://www.linkedin.com/in/luciaguzmandev">
+              <span class="icon-text"
+                ><i class="fab fa-linkedin"></i>LinkedIn</span
+              >
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--HERO Section-->
+    <main>
       <section class="hero">
         <div class="hero-content">
           <h1>Lucia Guzman</h1>
-          <p>Mobile & Web App Developer</p>
+          <p class="shared-paragraph">Mobile & Web App Developer</p>
           <div class="profile_image">
             <img src="img/profile_picture.png" alt="profile-picture" />
           </div>
-          <p>
+          <p class="shared-paragraph">
             Proactive and passionate developer specializing in mobile and web
             applications. I turn complex ideas into seamless, user-centered
             digital solutions.
           </p>
-          <a href="#web-proyects" class="btn-main">View My Projects</a>
+          <a href="#web-proyects" class="btn-common">View My Projects</a>
         </div>
       </section>
       <!--ABOUT ME-->
-      <section id="CTM" class="about-me">
+      <section class="about-me">
         <h2>About Me</h2>
-        <p>
-          Mobile and web app developer specialized in React Native, JavaScript,
-          and CSS. I build high-performance digital solutions with a focus on
-          user experience.
+        <p class="shared-paragraph">
+          Mobile, web, and backend developer specialized in React Native,
+          JavaScript, CSS, PHP, and MySQL. I build high-performance digital
+          solutions with a focus on user experience and scalable architecture.
         </p>
-        <p>
+        <p class="shared-paragraph">
           Passionate about continuous learning, I'm fluent in Spanish, English,
           and Portuguese, collaborating effectively in international teams.
         </p>
-        <p>
+        <p class="shared-paragraph">
           Check out my tutorials and insights on software development on my
           YouTube and Instagram channels.
         </p>
         <div class="about-social-container">
           <a
             href="https://www.youtube.com/@luciaprograma"
-            class="btn-social-main"
+            class="btn-common"
             target="_blank"
           >
             <i class="fab fa-youtube"></i> YouTube
           </a>
-        
-          <a
-            href="https://www.instagram.com/luciaprograma/"
-            class="btn-social-main"
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
         </div>
-        
       </section>
-            <!--WEB PROJECTS-->
+           <!--BACK END PROJECTS-->
+      <section id="backend-projects" class="projects">
+        <h2>Backend Applications</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <img src="img/backend_logo.png" alt="Geo Edu" />
+            <p class="proyects-paragraph">
+              Currently focused on developing and maintaining APIs and backend logic using PHP (Laravel) and MySQL. I emphasize clean, scalable code and efficient data handling, with consistent API testing and validation through Postman to ensure functionality and reliability across systems.
+            </p>
+            <a href="https://lucias-pig-game.netlify.app/" class="btn-common"
+              >Live Demo</a
+            >
+          </div>
+          
+          </div>
+        </div>
+      </section>
+      <!--WEB PROJECTS-->
       <section id="web-proyects" class="projects">
         <h2>Web Applications</h2>
         <div class="project-cards">
           <div class="project-card">
             <img src="img/proactive_logo.png" alt="Pig Game" />
-            <p>
+            <p class="proyects-paragraph">
               Pig Game: JavaScript-based game with HTML & CSS for layout and
               styling, focusing on logic, functions, and interactivity.
             </p>
-            <a href="https://lucias-pig-game.netlify.app/" class="btn-project"
+            <a href="https://lucias-pig-game.netlify.app/" class="btn-common"
               >Live Demo</a
             >
           </div>
           <div class="project-card">
             <img src="img/detail_logo.png" alt="Guess the Number" />
-            <p>
+            <p class="proyects-paragraph">
               Guess the Number: JavaScript-driven game using HTML & CSS for
               layout and design, focusing on random number generation, user
               input, and interactive feedback.
             </p>
-            <a href="https://guessthesecretnum.netlify.app/" class="btn-project"
+            <a href="https://guessthesecretnum.netlify.app/" class="btn-common"
               >Live Demo</a
             >
           </div>
           <div class="project-card">
             <img src="img/creativity_logo.png" alt="Guess the Letter" />
-            <p>
+            <p class="proyects-paragraph">
               Developed with JavaScript, HTML & CSS to create an interactive
               game that challenges users to identify cursive letters, focusing
               on event handling and UI responsiveness.
             </p>
             <a
               href="http://guessthecursiveletter.netlify.app/"
-              class="btn-project"
+              class="btn-common"
               >Live Demo</a
             >
           </div>
@@ -170,23 +177,23 @@
         <div class="project-cards">
           <div class="project-card">
             <img src="img/mobile_app1.png" alt="Mobile App 1" />
-            <p>
+            <p class="proyects-paragraph">
               Built using React Native and Expo, this app demonstrates
               cross-platform mobile development with JavaScript, focused on
               UI/UX and smooth navigation.
             </p>
-            <a href="https://your-mobile-app1-link.com" class="btn-project">
+            <a href="https://your-mobile-app1-link.com" class="btn-common">
               View Project
             </a>
           </div>
           <div class="project-card">
             <img src="img/mobile_app2.png" alt="Mobile App 2" />
-            <p>
+            <p class="proyects-paragraph">
               A mobile application created with React Native, integrating
               external APIs and responsive design, showcasing JavaScript logic
               and mobile user flows.
             </p>
-            <a href="https://your-mobile-app2-link.com" class="btn-project">
+            <a href="https://your-mobile-app2-link.com" class="btn-common">
               View Project
             </a>
           </div>
@@ -195,75 +202,71 @@
       </section>
       <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p>
+        <p class="shared-paragraph">
           Interested in collaborating or learning more about my projects? Feel
           free to get in touch!
         </p>
-        <div class="social-icons"> <!-- Change this to social-links -->
-           <!-- WhatsApp Icon -->
+        <div class="social-icons">
+          <!-- WhatsApp Icon -->
           <a href="https://wa.me/542234557946" aria-label="WhatsApp">
             <i class="fab fa-whatsapp"></i>
-           </a>
-            <!-- Gmail Icon -->
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
-           aria-label="Gmail">
+          </a>
+          <!-- Gmail Icon -->
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
+            aria-label="Gmail"
+          >
             <i class="fab fa-google"></i>
           </a>
-              <!-- YouTuve Icon -->
+          <!-- YouTuve Icon -->
           <a href="https://www.youtube.com/@luciaprograma" aria-label="YouTube">
             <i class="fab fa-youtube"></i>
           </a>
           <!-- Instagram Icon -->
-          <a href="https://www.linkedin.com/in/luciaguzmandev/" aria-label="LinkedIn">
+          <a
+            href="https://www.linkedin.com/in/luciaguzmandev/"
+            aria-label="LinkedIn"
+          >
             <i class="fab fa-linkedin-in"></i>
           </a>
           <!-- LinkedIn Icon -->
           <a href="https://github.com/luciaprograma" aria-label="GitHub">
             <i class="fab fa-github"></i>
           </a>
-          <!-- GitHub Icon -->
-          <a href="https://www.instagram.com/luciaprograma/" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
+
         </div>
       </section>
-      
-      </main>
-      
-      <footer class="site-footer">
-        <div class="footer-content">
-      
-          <div class="footer-columns">
-      
-            <!-- Columna 1: Derechos -->
-            <div class="footer-column">
-              <p>© 2025 All Rights Reserved</p>
-              <p><i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires, Argentina</p>
-            </div>
-      
-            <!-- Columna 2: Contacto directo -->
-            <div class="footer-column">
-              <p><i class="fas fa-envelope"></i> luciaeguzman@gmail.com</p>
-              <p><i class="fab fa-whatsapp"></i> +54 223 455-7946</p>
-            </div>
-      
-            <!-- Columna 3: Redes profesionales -->
-            <div class="footer-column">
-              <p><i class="fab fa-linkedin"></i> luciaguzmandev</p>
-              <p><i class="fab fa-github"></i> luciaprograma</p>
-            </div>
-      
-            <!-- Columna 4: Redes sociales -->
-            <div class="footer-column">
-              <p><i class="fab fa-instagram"></i> luciaprograma</p>
-              <p><i class="fab fa-youtube"></i> luciaprograma</p>
-            </div>
-      
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <p>© 2025 All Rights Reserved</p>
+            <p>
+              <i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires,
+              Argentina
+            </p>
           </div>
-      
+
+          <div class="footer-column">
+            <p><i class="fas fa-envelope"></i> luciaeguzman@gmail.com</p>
+            <p><i class="fab fa-whatsapp"></i> +54 223 455-7946</p>
+          </div>
+
+          <div class="footer-column">
+            <p><i class="fab fa-linkedin"></i> luciaguzmandev</p>
+            <p><i class="fab fa-github"></i> luciaprograma</p>
+          </div>
+
+          <div class="footer-column">
+            
+            <p><i class="fab fa-youtube"></i> luciaprograma</p>
+          </div>
         </div>
-      </footer>
-      
+      </div>
+    </footer>
+
     <script src="script.js"></script>
-  </body>
+  </body>
 </html>

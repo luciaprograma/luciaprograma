@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap');
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap");
+html,
+body {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,19 +13,19 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #EBE6DC;
+  color: #ebe6dc;
 }
 
 body {
   /*background-color: #EBE6DC;*/
-  background-color: #2B2B2B ; 
+  background-color: #333333;
 }
 
 /* HEADER */
@@ -35,25 +36,25 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; 
-  height: 60px; 
+  align-items: center;
+  height: 60px;
 }
 
 /* MENU BAR */
 .menu-bar {
   display: flex;
-  background: rgba(0, 0, 0, 0.8); 
-  padding: 0; 
+  background: rgba(0, 0, 0, 0.8);
+  padding: 0;
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 100%; 
+  height: 100%;
 }
 
 /* Menu option */
 .menu-item {
   position: relative;
-  margin: 0 20px; 
+  margin: 0 20px;
 }
 
 .menu-btn {
@@ -76,11 +77,10 @@ header {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(0, 0, 0, 0.9); 
+  background: rgba(0, 0, 0, 0.9);
   border-radius: 5px;
   min-width: 160px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
- 
 }
 
 .submenu a {
@@ -101,14 +101,12 @@ header {
   display: block;
 }
 
-
-
 /* Icon and text */
 .icon-text {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 /* LANGUAGES FLAGS*/
 .lang-switcher {
@@ -139,17 +137,17 @@ header {
 
 /* Hero Section */
 .hero {
-  padding: 20px 10px ;
-  
+  padding: 20px 10px;
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #2B2B2B; /
+  background-color: #2b2b2b;
 }
 
 .hero-content h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 3rem;
   font-weight: 700;
   color: white;
@@ -161,15 +159,14 @@ header {
   font-weight: 300;
   color: white;
   margin-bottom: 30px;
-  max-width: 800px; 
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-  text-align: center; 
+  text-align: center;
 }
 
-
 .hero-content .btn-main {
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -177,21 +174,37 @@ header {
   border-radius: 5px;
 }
 
-.hero-content .btn-main:hover {
-  background-color: #4682B4;
+.btn-common {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
+.btn-common:hover {
+  background-color: #4682b4;
+}
 
+.hero-content .btn-main:hover {
+  background-color: #4682b4;
+}
 
 /* About Me Section */
 .about-me {
   padding: 30px 10px;
   text-align: center;
-  background-color: #333333; 
+  background-color: #333333;
 }
 
 .about-me h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -206,7 +219,7 @@ header {
 }
 
 .about-me .btn-cv {
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -215,19 +228,18 @@ header {
 }
 
 .about-me .btn-cv:hover {
-  background-color: #4682B4;
+  background-color: #4682b4;
 }
 
-
 .profile_image {
-  display: inline-block; 
-  width: 175px;        
+  display: inline-block;
+  width: 175px;
   height: 175px;
   overflow: hidden;
-  border-radius: 50%;  
- }
+  border-radius: 50%;
+}
 
- .profile_image img{
+.profile_image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -236,7 +248,7 @@ header {
 }
 
 .btn-social-main {
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   color: white;
   padding: 10px 30px;
   text-decoration: none;
@@ -244,13 +256,13 @@ header {
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
   font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
 .btn-social-main:hover {
-  background-color: #4682B4;
+  background-color: #4682b4;
 }
 
 .about-social-container {
@@ -261,23 +273,25 @@ header {
   flex-wrap: wrap;
 }
 
-
 /* PROJECTS SECTIONS  */
-#web-proyects{
-  background-color: #2B2B2B; 
+#backend-projects {
+  background-color: #2b2b2b;
+}
+#web-proyects {
+  background-color: #333333;
 }
 #mobile-projects {
-  background-color: #333333; 
+  background-color: #2b2b2b;
 }
 
 .projects {
-  padding: 60px 20px;
+  padding: 20px 20px;
   background-color: #333333;
   text-align: center;
 }
 
 .projects h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -314,7 +328,7 @@ header {
 }
 
 .project-card .btn-project {
-  background-color: #1E90FF;
+  background-color: #1e90ff;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -323,20 +337,19 @@ header {
 }
 
 .project-card .btn-project:hover {
-  background-color: #4682B4;
+  background-color: #4682b4;
 }
 
 /* CONTACT SECTION*/
 
-
 .contact {
   padding: 30px 10px;
-  background-color: #2B2B2B;
+  background-color: #333333;
   text-align: center;
 }
 
 .contact h2 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -357,24 +370,35 @@ header {
   margin-top: 20px;
 }
 
-.contact .social-icons a { 
+.contact .social-icons a {
   font-size: 2rem;
-  color: #EBE6DC;
+  color: #ebe6dc;
   text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 /* Hover color effects */
-.contact .social-icons a:hover .fa-youtube { color: #FF0000; }
-.contact .social-icons a:hover .fa-linkedin-in { color: #0077B5; }
-.contact .social-icons a:hover .fa-github { color: #c9d1d9; }
-.contact .social-icons a:hover .fa-instagram { color: #E1306C; }
-.contact .social-icons a:hover .fa-whatsapp { color: #25D366; } 
-.contact .social-icons a:hover .fa-google { color: #DB4437; } 
+.contact .social-icons a:hover .fa-youtube {
+  color: #ff0000;
+}
+.contact .social-icons a:hover .fa-linkedin-in {
+  color: #0077b5;
+}
+.contact .social-icons a:hover .fa-github {
+  color: #c9d1d9;
+}
+.contact .social-icons a:hover .fa-instagram {
+  color: #e1306c;
+}
+.contact .social-icons a:hover .fa-whatsapp {
+  color: #25d366;
+}
+.contact .social-icons a:hover .fa-google {
+  color: #db4437;
+}
 .contact .social-icons a:hover {
   transform: scale(1.2);
 }
-
 
 /* FOOTER */
 .site-footer {
@@ -413,7 +437,7 @@ header {
 }
 
 .footer-column i {
-  color: white; 
+  color: white;
   font-size: 1rem;
 }
 /* MEDIA QUERIES: RESPONSIVE DESIGN */
