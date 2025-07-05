@@ -13,7 +13,7 @@ main {
   flex: 1;
   display: flex;
   flex-direction: column;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "" Source Sans Pro ", sans-serif";
 }
 
 * {
@@ -99,6 +99,12 @@ header {
 
 .menu-item:hover .submenu {
   display: block;
+}
+.menu-bar,
+.menu-btn,
+.submenu a,
+.flag-link {
+  font-family: "Poppins", sans-serif;
 }
 
 /* Icon and text */
