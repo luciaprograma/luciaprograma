@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-GHQGQ227YE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-GHQGQ227YE");
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucia Guzman - CV</title>
 
-    <!-- Tipografías elegantes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome para íconos -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
 
-    <!-- Tus estilos -->
     <link rel="stylesheet" href="CV_styles.css" />
   </head>
   <body>
-    <!-- PDF GENERATOR -->
     <div class="download-container">
       <button onclick="downloadCV()">Descargar PDF</button>
     </div>
