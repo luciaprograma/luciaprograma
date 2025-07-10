@@ -445,66 +445,97 @@ header {
   color: white;
   font-size: 1rem;
 }
-/* MEDIA QUERIES: RESPONSIVE DESIGN */
-@media (max-width: 768px) {
+/* RESPONSIVE */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+
+  main,
+  section {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .hero-content h1 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
   }
 
   .hero-content p {
     font-size: 1rem;
-    padding: 0 10px;
+    line-height: 1.5;
+    margin-bottom: 20px;
   }
 
-  .about-me h2,
-  .projects h2,
-  .contact h2 {
-    font-size: 2rem;
+  .profile_image {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
   }
 
-  .about-me p,
-  .contact p {
+  .btn-common {
+    width: auto;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+
+  .about-me h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .about-me p {
     font-size: 1rem;
-    padding: 0 10px;
-  }
-
-  .project-cards {
-    flex-direction: column;
-    align-items: center;
+    line-height: 1.5;
   }
 
   .project-card {
-    width: 90%;
-  }
-
-  .menu-bar {
-    flex-direction: column;
-    height: auto;
-    padding: 10px 0;
-  }
-
-  .menu-item {
-    margin: 10px 0;
-  }
-
-  .lang-switcher {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .about-social-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact .social-icons {
-    flex-wrap: wrap;
-    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .footer-columns {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 1rem;
+  }
+
+  .menu-bar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 4px 0;
+    height: auto;
+    gap: 10px;
+  }
+
+  .menu-btn {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+
+  .flag-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .lang-switcher {
+    gap: 10px;
   }
 }
