@@ -27,8 +27,8 @@ body {
 }
 
 .sidebar img {
-  width: 160px;
-  height: 160px;
+  width: 190px;
+  height: 190px;
   object-fit: cover;
   border-radius: 80px;
   margin-bottom: 1.5rem;
@@ -38,20 +38,20 @@ body {
 
 .sidebar h1 {
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  margin-bottom: 0.2rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .sidebar p {
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
-  margin: 0.4rem 0;
+  margin: 1rem 0;
 }
 
 .contact-info {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 2rem;
+  font-size: 2rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -60,7 +60,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 4rem;
   margin: 1.5rem 0;
   flex-direction: column;
 }
@@ -76,11 +76,12 @@ body {
   background-color: transparent;
   transition: color 0.3s, background-color 0.3s;
   text-decoration: none;
-  gap: 0.4rem; /* Añadido para el espacio entre el icono y el texto */
+  gap: 1.5rem; /* Añadido para el espacio entre el icono y el texto */
+  font-size: 1.2rem;
 }
 
 .social-icons i {
-  font-size: 1.6rem;
+  font-size: 2rem;
   line-height: 1;
   text-align: center;
 }
@@ -89,7 +90,6 @@ body {
   color: #e9c46a;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
 
 .main {
   width: 70%;
