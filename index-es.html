@@ -1,4 +1,3 @@
-<!-- INICIO DEL ARCHIVO -->
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -13,12 +12,12 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-GHQGQ227YE");
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucia Guzman Desarrolladora</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap"
       rel="stylesheet"
@@ -31,6 +30,7 @@
   </head>
   <body>
     <header class="header">
+      <!-- menu bar -->
       <nav class="menu-bar">
         <div class="menu-item">
           <button class="menu-btn">Curriculum Vitae</button>
@@ -59,29 +59,6 @@
             REPOSITORIO GIT
           </button>
         </div>
-
-        <div class="menu-item">
-          <button class="menu-btn">CONTACTO</button>
-          <div class="submenu">
-            <a href="https://wa.me/5492234557946">
-              <span class="icon-text"
-                ><i class="fab fa-whatsapp"></i>WhatsApp</span
-              >
-            </a>
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
-            >
-              <span class="icon-text"
-                ><i class="far fa-envelope"></i>Gmail</span
-              >
-            </a>
-            <a href="https://www.linkedin.com/in/luciaguzmandev">
-              <span class="icon-text"
-                ><i class="fab fa-linkedin"></i>LinkedIn</span
-              >
-            </a>
-          </div>
-        </div>
       </nav>
     </header>
 
@@ -90,41 +67,43 @@
       <section class="hero">
         <div class="hero-content">
           <h1>Lucia Guzman</h1>
-          <p>Desarrolladora de Aplicaciones Mobile y Web</p>
-          <a class="profile_image">
+          <p class="shared-paragraph">
+            Desarrolladora de Aplicaciones Mobile y Web
+          </p>
+          <div class="profile_image">
             <img src="img/profile_picture.png" alt="foto de perfil" />
-          </a>
-          <p>
+          </div>
+          <p class="shared-paragraph">
             Desarrolladora proactiva con enfoque en la creación de soluciones
             digitales intuitivas, centradas en la experiencia del usuario y con
             una sólida base técnica.
           </p>
-          <a href="#web-proyects" class="btn-main">Ver Mis Proyectos</a>
+          <a href="#web-proyects" class="btn-common">Ver Mis Proyectos</a>
         </div>
       </section>
 
       <!-- SOBRE MÍ -->
-      <section id="CTM" class="about-me">
+      <section class="about-me">
         <h2>Sobre Mí</h2>
-        <p>
+        <p class="shared-paragraph">
           Soy desarrolladora de aplicaciones mobile, web y backend,
           especializada en React Native, JavaScript, CSS, PHP y MySQL.
           Desarrollo productos digitales funcionales, eficientes y escalables,
           siempre con foco en la experiencia del usuario.
         </p>
-        <p>
+        <p class="shared-paragraph">
           Me interesa el aprendizaje continuo y trabajar en equipos
           colaborativos. Hablo español, inglés y portugués con fluidez, lo que
           me permite integrarme fácilmente en entornos internacionales.
         </p>
-        <p>
+        <p class="shared-paragraph">
           También comparto contenido técnico en mis canales de YouTube, donde
           enseño y muestro proyectos propios.
         </p>
         <div class="about-social-container">
           <a
             href="https://www.youtube.com/@luciaprograma"
-            class="btn-social-main"
+            class="btn-common"
             target="_blank"
           >
             <i class="fab fa-youtube"></i> YouTube
@@ -158,72 +137,45 @@
         <div class="project-cards">
           <div class="project-card">
             <img src="img/proactive_logo.png" alt="Pig Game" />
-            <p>
+            <p class="proyects-paragraph">
               Pig Game: juego desarrollado con JavaScript, HTML y CSS. Enfatiza
               el manejo de lógica condicional, funciones y dinámica de puntajes.
             </p>
-            <a href="https://lucias-pig-game.netlify.app/" class="btn-project"
+            <a href="https://lucias-pig-game.netlify.app/" class="btn-common"
               >Ver Online</a
             >
           </div>
           <div class="project-card">
             <img src="img/detail_logo.png" alt="Guess the Number" />
-            <p>
+            <p class="proyects-paragraph">
               Juego Guess the Number creado en JavaScript, usando HTML y CSS
               para estructura y estilo. Utiliza números aleatorios, interacción
               con el usuario y feedback visual.
             </p>
-            <a href="https://guessthesecretnum.netlify.app/" class="btn-project"
+            <a href="https://guessthesecretnum.netlify.app/" class="btn-common"
               >Ver Online</a
             >
           </div>
           <div class="project-card">
             <img src="img/creativity_logo.png" alt="Guess the Letter" />
-            <p>
+            <p class="proyects-paragraph">
               Juego educativo con JavaScript que desafía al usuario a reconocer
               letras en cursiva. Implementa lógica de eventos, inputs y diseño
               adaptable.
             </p>
             <a
               href="http://guessthecursiveletter.netlify.app/"
-              class="btn-project"
+              class="btn-common"
               >Ver Online</a
             >
           </div>
         </div>
       </section>
 
-      <!-- APLICACIONES MOBILE 
-      <section id="mobile-projects" class="projects">
-        <h2>Aplicaciones Mobile</h2>
-        <div class="project-cards">
-          <div class="project-card">
-            <img src="img/mobile_app1.png" alt="App Mobile 1" />
-            <p>
-              Aplicación creada con React Native y Expo, orientada a móviles.
-              Integra navegación, componentes reutilizables y diseño responsive.
-            </p>
-            <a href="https://your-mobile-app1-link.com" class="btn-project"
-              >Ver Proyecto</a
-            >
-          </div>
-          <div class="project-card">
-            <img src="img/mobile_app2.png" alt="App Mobile 2" />
-            <p>
-              App desarrollada en React Native con conexión a API externa y
-              manejo de estados. Presenta interfaz clara, moderna y fluida.
-            </p>
-            <a href="https://your-mobile-app2-link.com" class="btn-project"
-              >Ver Proyecto</a
-            >
-          </div>
-        </div>
-      </section> -->
-
       <!-- CONTACTO -->
       <section id="contact" class="contact">
         <h2>Contacto</h2>
-        <p>
+        <p class="shared-paragraph">
           ¿Querés colaborar o conocer más sobre mis proyectos? ¡Estoy disponible
           para oportunidades laborales y conexiones en IT!
         </p>
@@ -255,26 +207,11 @@
 
     <footer class="site-footer">
       <div class="footer-content">
-        <div class="footer-columns">
-          <div class="footer-column">
-            <p>© 2025 Todos los derechos reservados</p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires,
-              Argentina
-            </p>
-          </div>
-          <div class="footer-column">
-            <p><i class="fas fa-envelope"></i> luciaeguzman@gmail.com</p>
-            <p><i class="fab fa-whatsapp"></i> +54 223 455-7946</p>
-          </div>
-          <div class="footer-column">
-            <p><i class="fab fa-linkedin"></i> luciaguzmandev</p>
-            <p><i class="fab fa-github"></i> luciaprograma</p>
-          </div>
-          <div class="footer-column">
-            <p><i class="fab fa-youtube"></i> luciaprograma</p>
-          </div>
-        </div>
+        <p>© 2025 Todos los derechos reservados</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Mar del Plata, Buenos Aires,
+          Argentina
+        </p>
       </div>
     </footer>
 
