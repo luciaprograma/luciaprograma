@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
-    <!-- Google tag (gtag.js) -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-GHQGQ227YE"
@@ -30,7 +29,6 @@
   </head>
   <body>
     <header class="header">
-      <!-- menu bar -->
       <nav class="menu-bar">
         <div class="menu-item">
           <button class="menu-btn">Curriculum Vitae</button>
@@ -41,13 +39,13 @@
         </div>
 
         <div class="menu-item lang-switcher">
-          <a href="index-es.html" class="flag-link">
-            <img src="img/ES.png" alt="Español" class="flag-img" />
-            <span>SPA</span>
-          </a>
           <a href="index.html" class="flag-link">
-            <img src="img/EN.png" alt="English" class="flag-img" />
+            <img src="img/EN.png" alt="Inglês" class="flag-img" />
             <span>EN</span>
+          </a>
+          <a href="index-es.html" class="flag-link">
+            <img src="img/ES.png" alt="Espanhol" class="flag-img" />
+            <span>ES</span>
           </a>
         </div>
 
@@ -63,7 +61,6 @@
     </header>
 
     <main>
-      <!-- HERO Section -->
       <section class="hero">
         <div class="hero-content">
           <h1>Lucia Guzman</h1>
@@ -74,52 +71,62 @@
             <img src="img/profile_picture.png" alt="foto de perfil" />
           </div>
           <p class="shared-paragraph">
-            Desenvolvedora proativa e apaixonada por transformar ideias
-            complexas em soluções digitais intuitivas e centradas no usuário.
+            Desenvolvedora de aplicações mobile, web e backend, especializada em
+            React Native, JavaScript, CSS, PHP e MySQL. Crio soluções digitais
+            de alto desempenho com foco em experiência do usuário e arquitetura
+            escalável.
           </p>
-          <a href="#web-proyects" class="btn-common">Ver Meus Projetos</a>
+          <p class="shared-paragraph">
+            Apaixonada por aprendizado contínuo, falo espanhol, inglês e
+            português. Confira meus tutoriais no meu canal do YouTube.
+          </p>
+          <a href="#fullstack-projects" class="btn-common">Ver Meus Projetos</a>
+          <div class="about-social-container">
+            <a
+              href="https://www.youtube.com/@luciaprograma"
+              class="btn-common"
+              target="_blank"
+            >
+              <i class="fab fa-youtube"></i> YouTube
+            </a>
+          </div>
         </div>
       </section>
 
-      <!-- SOBRE MIM -->
-      <section class="about-me">
-        <h2>Sobre Mim</h2>
-        <p class="shared-paragraph">
-          Desenvolvedora de aplicações mobile e web com foco em React Native,
-          JavaScript e CSS. Entrego soluções digitais de alta performance com
-          ênfase na experiência do usuário.
-        </p>
-        <p class="shared-paragraph">
-          Apaixonada por aprendizado contínuo, sou fluente em espanhol, inglês e
-          português, colaborando com equipes internacionais de forma eficaz.
-        </p>
-        <p class="shared-paragraph">
-          Confira meus tutoriais e conteúdos sobre desenvolvimento de software
-          no YouTube.
-        </p>
-        <div class="about-social-container">
-          <a
-            href="https://www.youtube.com/@luciaprograma"
-            class="btn-common"
-            target="_blank"
-          >
-            <i class="fab fa-youtube"></i> YouTube
-          </a>
+      <section id="fullstack-projects" class="projects">
+        <h2>Aplicações Full Stack</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <img src="img/fullstack.jpg" alt="Travel App" />
+            <p class="proyects-paragraph">
+              Travel App: sistema full-stack completo construído com Laravel
+              (backend) e React (frontend) usando Vite, PostgreSQL e serviços
+              AWS. Permite registrar usuários, verificar email, gerenciar
+              perfis, registrar excursões e enviar comprovantes de pagamento
+              para validação administrativa. Autenticação e segurança
+              implementadas com sessões e cookies do Sanctum.
+            </p>
+            <a
+              href="https://youtu.be/kT4YajQwiLw?si=r57mBsjBD3927DKM"
+              class="btn-common"
+              target="_blank"
+              >Ver Demo</a
+            >
+          </div>
         </div>
       </section>
 
-      <!-- BACKEND PROJECTS -->
       <section id="backend-projects" class="projects">
         <h2>Aplicações Backend</h2>
         <div class="project-cards">
           <div class="project-card">
             <img src="img/backend_logo.png" alt="Geo Edu" />
             <p class="proyects-paragraph">
-              Atualmente trabalho com desenvolvimento e manutenção de APIs e
-              lógica backend usando PHP (Laravel) e MySQL. Priorizo um código
-              limpo, escalável e eficiente no tratamento de dados. Utilizo o
-              Postman para testes e validações frequentes, garantindo
-              confiabilidade e integração adequada entre os sistemas.
+              Atualmente desenvolvo e mantenho APIs e lógica backend utilizando
+              PHP (Laravel) e MySQL. Priorizo código limpo, escalável e
+              eficiente no tratamento de dados, com testes e validações
+              frequentes usando Postman para garantir funcionalidade e
+              confiabilidade.
             </p>
             <a href="https://geoeducacion.com.ar/" class="btn-common"
               >Ver Projeto</a
@@ -128,15 +135,14 @@
         </div>
       </section>
 
-      <!-- WEB PROJECTS -->
       <section id="web-proyects" class="projects">
         <h2>Aplicações Web</h2>
         <div class="project-cards">
           <div class="project-card">
             <img src="img/proactive_logo.png" alt="Pig Game" />
             <p class="proyects-paragraph">
-              Pig Game: Jogo baseado em JavaScript com HTML e CSS para layout e
-              estilo, com foco em lógica, funções e interatividade.
+              Pig Game: jogo desenvolvido em JavaScript com HTML e CSS, focado
+              em lógica, funções e interatividade.
             </p>
             <a href="https://lucias-pig-game.netlify.app/" class="btn-common"
               >Ver Online</a
@@ -145,9 +151,9 @@
           <div class="project-card">
             <img src="img/detail_logo.png" alt="Guess the Number" />
             <p class="proyects-paragraph">
-              Guess the Number: Jogo desenvolvido em JavaScript, utilizando HTML
-              e CSS para estrutura e design. Destaque para geração aleatória,
-              entrada do usuário e resposta dinâmica.
+              Guess the Number: jogo em JavaScript usando HTML e CSS, com
+              destaque para geração de números aleatórios, entrada do usuário e
+              feedback interativo.
             </p>
             <a href="https://guessthesecretnum.netlify.app/" class="btn-common"
               >Ver Online</a
@@ -156,9 +162,9 @@
           <div class="project-card">
             <img src="img/creativity_logo.png" alt="Guess the Letter" />
             <p class="proyects-paragraph">
-              Jogo interativo criado com JavaScript, HTML e CSS, desafiando o
-              usuário a identificar letras cursivas. Enfatiza manipulação de
-              eventos e responsividade da interface.
+              Jogo interativo em JavaScript, HTML e CSS que desafia o usuário a
+              identificar letras cursivas, com foco em manipulação de eventos e
+              responsividade da interface.
             </p>
             <a
               href="http://guessthecursiveletter.netlify.app/"
@@ -169,35 +175,32 @@
         </div>
       </section>
 
-      <!-- CONTATO -->
       <section id="contact" class="contact">
         <h2>Contato</h2>
         <p class="shared-paragraph">
-          Interessado(a) em colaborar ou saber mais sobre meus projetos? Fique à
-          vontade para entrar em contato!
+          Interessado em colaborar ou conhecer meus projetos? Entre em contato
+          diretamente.
         </p>
         <div class="social-icons">
-          <a href="https://wa.me/542234557946" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-          </a>
+          <a href="https://wa.me/542234557946" aria-label="WhatsApp"
+            ><i class="fab fa-whatsapp"></i
+          ></a>
           <a
             href="https://mail.google.com/mail/?view=cm&fs=1&to=luciaeguzman@gmail.com"
             aria-label="Gmail"
-          >
-            <i class="fab fa-google"></i>
-          </a>
-          <a href="https://www.youtube.com/@luciaprograma" aria-label="YouTube">
-            <i class="fab fa-youtube"></i>
-          </a>
+            ><i class="fab fa-google"></i
+          ></a>
+          <a href="https://www.youtube.com/@luciaprograma" aria-label="YouTube"
+            ><i class="fab fa-youtube"></i
+          ></a>
           <a
             href="https://www.linkedin.com/in/luciaguzmandev/"
             aria-label="LinkedIn"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a href="https://github.com/luciaprograma" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/luciaprograma" aria-label="GitHub"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
       </section>
     </main>

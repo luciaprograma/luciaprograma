@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
 html,
 body {
   height: 100%;
   display: flex;
   flex-direction: column;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -99,6 +101,7 @@ header {
 .menu-item:hover .submenu {
   display: block;
 }
+
 .menu-bar,
 .menu-btn,
 .submenu a,
@@ -162,15 +165,6 @@ header {
   text-align: center;
 }
 
-.hero-content .btn-main {
-  background-color: #1e90ff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
 .btn-common {
   background-color: #1e90ff;
   color: white;
@@ -186,45 +180,6 @@ header {
 }
 
 .btn-common:hover {
-  background-color: #4682b4;
-}
-
-.hero-content .btn-main:hover {
-  background-color: #4682b4;
-}
-
-/* About Me Section */
-.about-me {
-  padding: 30px 10px;
-  text-align: center;
-  background-color: #333333;
-}
-
-.about-me h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-.about-me p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 850px;
-  margin: 0 auto;
-  margin-bottom: 10px;
-}
-
-.about-me .btn-cv {
-  background-color: #1e90ff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.about-me .btn-cv:hover {
   background-color: #4682b4;
 }
 
@@ -244,24 +199,6 @@ header {
   background-color: white;
 }
 
-.btn-social-main {
-  background-color: #1e90ff;
-  color: white;
-  padding: 10px 30px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn-social-main:hover {
-  background-color: #4682b4;
-}
-
 .about-social-container {
   display: flex;
   justify-content: center;
@@ -274,11 +211,9 @@ header {
 #backend-projects {
   background-color: #2b2b2b;
 }
+
 #web-proyects {
   background-color: #333333;
-}
-#mobile-projects {
-  background-color: #2b2b2b;
 }
 
 .projects {
@@ -324,21 +259,7 @@ header {
   margin-bottom: 15px;
 }
 
-.project-card .btn-project {
-  background-color: #1e90ff;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-}
-
-.project-card .btn-project:hover {
-  background-color: #4682b4;
-}
-
 /* CONTACT SECTION*/
-
 .contact {
   padding: 30px 10px;
   background-color: #2b2b2b;
@@ -376,21 +297,23 @@ header {
 .contact .social-icons a:hover .fa-youtube {
   color: #ff0000;
 }
+
 .contact .social-icons a:hover .fa-linkedin-in {
   color: #0077b5;
 }
+
 .contact .social-icons a:hover .fa-github {
   color: #c9d1d9;
 }
-.contact .social-icons a:hover .fa-instagram {
-  color: #e1306c;
-}
+
 .contact .social-icons a:hover .fa-whatsapp {
   color: #25d366;
 }
+
 .contact .social-icons a:hover .fa-google {
   color: #db4437;
 }
+
 .contact .social-icons a:hover {
   transform: scale(1.2);
 }
@@ -401,7 +324,6 @@ header {
   color: white;
   font-family: sans-serif;
   padding: 1rem 2rem;
-
   text-align: center;
 }
 
@@ -465,16 +387,6 @@ header {
     font-size: 0.95rem;
     padding: 10px 20px;
     margin: 0 auto;
-  }
-
-  .about-me h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-
-  .about-me p {
-    font-size: 1rem;
-    line-height: 1.5;
   }
 
   .project-card {
